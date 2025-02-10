@@ -1,1 +1,2 @@
-worker: python3 bot_notas.py
+worker: ./bot_notas.py
+
