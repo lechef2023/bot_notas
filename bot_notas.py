@@ -16,7 +16,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "¡Hola! Bienvenido a ia_prueba_bot.\n\n"
         "Usa /notas <nombre_alumno> para obtener tus notas.\n"
-        "Usa /contenido <tema> para obtener enlaces de descarga."
+        "Usa /contenido <tema> para obtener enlaces de descarga.\n"
+        "Usa /cronograma <clases> para obtener el cronograma académico.\n"
     )
 
 # Función para manejar el comando /notas
