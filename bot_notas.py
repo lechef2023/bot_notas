@@ -13,7 +13,11 @@ TELEGRAM_TOKEN = "7470830401:AAGvoJXEEsRq3V6-Zp0s5I3SciV_Bjpq-x4"
 
 # Función para manejar el comando /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("¡Hola! Usa /notas <nombre_alumno> para obtener tus notas. Usa /contenido <tema> para obtener enlaces de descarga.")
+    await update.message.reply_text(
+        "¡Hola! Bienvenido a ia_prueba_bot.\n\n"
+        "Usa /notas <nombre_alumno> para obtener tus notas.\n"
+        "Usa /contenido <tema> para obtener enlaces de descarga."
+    )
 
 # Función para manejar el comando /notas
 async def obtener_notas(update: Update, context: ContextTypes.DEFAULT_TYPE):
